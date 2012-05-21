@@ -53,7 +53,8 @@ For example, you can change the vendored version of nginx to 1.0.12.
 
 First you'll need to build a Heroku-compatible version of nginx:
 
-    $  export AWS_ID=xxx AWS_SECRET=yyy S3_BUCKET=zzz
+    $ vulcan create vulcan-yourname
+    $ export AWS_ID=xxx AWS_SECRET=yyy S3_BUCKET=zzz
     $ s3 create $S3_BUCKET
     $ support/package_nginx 1.0.12 8.30
 
